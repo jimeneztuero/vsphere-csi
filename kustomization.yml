@@ -1,0 +1,12 @@
+# Deployment configuration for VMware vSphere CSI components using Kustomize.
+# This file defines the resources and namespace for deploying the vSphere CSI driver and cloud controller manager
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+  - 0-namespace.yml
+  - 1-vsphere-config-secret
+  - 2-secrets
+  - 3-config-maps
+  - 4-vsphere-csi-driver
+  - 99-vsphere-cloud-controller-manager.yml
+  - 5-storage-class
