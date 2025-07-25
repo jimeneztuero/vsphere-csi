@@ -3,9 +3,9 @@
 set -e
 
 NODES=(
-  "k8s-10-mgmt-1.mgmt.hss.int"
-  "k8s-10-mgmt-2.mgmt.hss.int"
-  "k8s-10-mgmt-3.mgmt.hss.int"
+  "node1"
+  "node2"
+  "node3"
 )
 
 for NODE in "${NODES[@]}"; do
